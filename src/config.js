@@ -6,9 +6,9 @@ export default {
   showMarkers: false,
   theme: 'mongabay',
   intro: {
-    title: 'Title',
-    subtitle: 'Subtitle',
-    date: 'Nov. 16 2020',
+    title: 'Narcopistas',
+    subtitle: 'Mongabay Latam y Earth Genome detectaron 67 pistas de aterrizaje clandestinas utilizadas para el transporte de droga en las regiones peruanas de Ucayali, Huánuco y Pasco.',
+    date: 'Oct. 24 2024',
     social: [
       {
         name: 'twitter',
@@ -92,7 +92,7 @@ export default {
         hidden: false,
         title: 'Narcopistas',
         image: './path/to/image/source.png',
-        description: 'La verificación periodística de cada una de ellas, con fuentes oficiales y locales, fue clave para confirmar que 67 de las 76 narcopistas están distribuidas entre Ucayali (46), Huánuco (17) y Pasco (5), y sirven hoy al narcotráfico.',
+        description: 'La verificación periodística de cada una de ellas, con fuentes oficiales y locales, fue clave para confirmar que 67 de las 76 narcopistas están distribuidas entre Ucayali (45), Huánuco (17) y Pasco (5), y sirven hoy al narcotráfico.',
         location: {
             center: [-74.549, -9.575],
             zoom: 8,
@@ -132,9 +132,9 @@ export default {
         id: 'third-chapter',
         alignment: 'left',
         hidden: false,
-        title: 'Third Title',
+        title: 'Los vuelos de la muerte',
         image: './path/to/image/source.png',
-        description: 'Copy these sections to add to your story.',
+        description: 'Se trata de tres regiones que configuran un triángulo geográfico en el que al menos 15 líderes indígenas han sido asesinados desde la pandemia, en 2020. Desde esos territorios parten la mayor cantidad de vuelos cargados de cocaína, como confirmaron fuentes de la Dirección Antidrogas de la Policía Nacional del Perú.',
         location: {
             center: [-74.549, -9.575],
             zoom: 8,
@@ -192,7 +192,7 @@ export default {
         hidden: false,
         title: 'Territorios indígenas',
         image: './path/to/image/source.png',
-        description: 'Lo crítico es que 34 de las 67 narcopistas detectadas por el algoritmo están dentro de territorios indígenas y 20 alrededor.',
+        description: 'Lo crítico es que 30 de las 67 narcopistas detectadas por el algoritmo están dentro de territorios indígenas y 26 alrededor.',
         location: {
             center: [-74.549, -9.575],
             zoom: 8,
@@ -219,7 +219,7 @@ export default {
         id: 'sixth-chapter',
         alignment: 'left',
         hidden: false,
-        title: 'Sixth Title',
+        title: 'Cercadas por la ilegalidad',
         image: './path/to/image/source.png',
         description: 'Siguiendo la información satelital, periodistas de Mongabay Latam llegaron a dos comunidades, ubicadas entre las regiones de Huánuco y Pasco, que soportan juntas la presencia de 15 pistas de aterrizaje clandestinas en sus territorios.',
         location: {
@@ -252,7 +252,7 @@ export default {
         id: 'seventh-chapter',
         alignment: 'right',
         hidden: false,
-        title: 'Seventh Title',
+        title: 'Reservas indígenas bajo presión',
         image: './path/to/image/source.png',
         description: 'Dentro de la Reserva Indígena Kakataibo Norte y Sur es posible ver al menos 02 tajos ilegales. Además, al menos 4 reservas indígenas para pueblos en aislamiento y contacto inicial son afectadas por la presencia de 6 aeródromos ilegales. Aunque estos territorios deberían ser intangibles por ley, en la práctica no lo son.',
         location: {
@@ -290,7 +290,7 @@ export default {
         id: 'eighth-chapter',
         alignment: 'right',
         hidden: false,
-        title: 'concesiones forestales',
+        title: 'Concesiones forestales',
         image: './path/to/image/source.png',
         description: 'Las narcopistas se han instalado incluso dentro de 9 concesiones forestales que están destinadas al aprovechamiento sostenible del bosque. El algoritmo detectó en total 10 trazos.',
         location: {
@@ -372,7 +372,7 @@ export default {
         id: 'tenth-identifier',
         alignment: 'right',
         hidden: false,
-        title: 'Tenth Title',
+        title: 'Ríos y vías',
         image: './path/to/image/source.png',
         description: 'Un hallazgo clave de la investigación es que 52 de las 67 narcopistas situadas en el triángulo de la muerte que conforman Ucayali, Huánuco y Pasco —donde han asesinado a la mayoría de líderes indígenas— están a un kilómetro de ríos y vías, lo que las convierte en puntos estratégicos para el traslado de los cargamentos de droga.',
         location: {
@@ -380,12 +380,6 @@ export default {
             zoom: 8,
             pitch: 35.12,
             bearing: 49.6
-            // flyTo additional controls-
-            // These options control the flight curve, making it move
-            // slowly and zoom out almost completely before starting
-            // to pan.
-            //speed: 2, // make the flying slow
-            //curve: 1, // change the speed at which it zooms out
         },
         mapAnimation: 'flyTo',
         rotateAnimation: false,
