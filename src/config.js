@@ -37,15 +37,23 @@ export default {
     }
   ],
   alignment: 'left',
-  footer: 'ADD FOOTER',
+  footer: 'Cartography by Willie Shubert for Mongabay.',
   chapters: [
     {
         id: 'first chapter',
         alignment: 'left',
         hidden: false,
         title: 'Pistas aéreas detectadas',
-        image: './path/to/image/source.png',
         description: 'El algoritmo de inteligencia artificial detectó 76 pistas de aterrizaje clandestinas ocultas en la selva peruana.',
+        legend: [
+              {
+                title: 'Pistas de aterrizaje',
+                color: '#037760',
+                border: 'white',
+                type: 'circle'
+              }
+        ],
+        sources: 'Earth Genome y Mongabay',
         location: {
             center: [-74.19873, -9.59581],
             zoom: 4.35,
@@ -100,6 +108,13 @@ export default {
               }
             ],
         description: 'La verificación periodística de cada una de ellas, con fuentes oficiales y locales, fue clave para confirmar que 67 de las 76 narcopistas están distribuidas entre Ucayali (45), Huánuco (17) y Pasco (5), y sirven hoy al narcotráfico.',
+        legend: [
+                {
+                  title: 'Densidad del cultivo de coca',
+                  color: '#f1e732'
+                }
+              ],
+        sources: 'ADD SOURCE',
         location: {
             center: [-74.549, -9.575],
             zoom: 8,
@@ -141,6 +156,14 @@ export default {
         hidden: false,
         title: 'Los vuelos de la muerte',
         description: 'Se trata de tres regiones que configuran un triángulo geográfico en el que al menos 15 líderes indígenas han sido asesinados desde la pandemia, en 2020. Desde esos territorios parten la mayor cantidad de vuelos cargados de cocaína, como confirmaron fuentes de la Dirección Antidrogas de la Policía Nacional del Perú.',
+        legend: [
+                {
+                  title: 'Territorios Indigenas',
+                  color: '#de6363',
+                  pattern: 'LINEPATTERN'
+                }
+              ],
+        sources: 'ADD SOURCE',
         location: {
             center: [-74.549, -9.575],
             zoom: 8,
@@ -177,6 +200,13 @@ export default {
               }
             ],
         description: 'Algunos de los tajos abiertos en ese triángulo de ilegalidad han tomado paisajes completos. Sólo en la provincia de Atalaya, en la región Ucayali, se detectaron 32 pistas.',
+        legend: [
+                {
+                  title: 'Deforestación',
+                  color: '#ccefb8',
+                }
+              ],
+        sources: 'ADD SOURCE',
         location: {
             center: [-73.413, -10.724],
             zoom: 9.83,
@@ -204,7 +234,6 @@ export default {
         alignment: 'left',
         hidden: false,
         title: 'Territorios indígenas',
-        image: './path/to/image/source.png',
         description: 'Lo crítico es que 30 de las 67 narcopistas detectadas por el algoritmo están dentro de territorios indígenas y 26 alrededor.',
         location: {
             center: [-74.549, -9.575],
@@ -303,11 +332,6 @@ export default {
               opacity: 1,
           },
           {
-              layer: 'coca-crops-density-20241002t1-55l40t',
-              opacity: 0,
-
-          },
-          {
               layer: 'territorios-indigenas-0lu5ni copy',
               opacity: 1,
           }
@@ -321,7 +345,7 @@ export default {
     },
     {
         id: 'eighth-chapter',
-        alignment: 'right',
+        alignment: 'fully',
         hidden: false,
         title: 'Concesiones forestales',
         images: [
@@ -329,10 +353,17 @@ export default {
                 src: 'DSC_0723-1.jpg',
                 position: 'top',
                 title: 'la madera transita los ríos',
-                author: 'Santiago Romaní / Mongabay Latam'
+                author: 'Santiago Romaní'
               }
             ],
         description: 'Las narcopistas se han instalado incluso dentro de 9 concesiones forestales que están destinadas al aprovechamiento sostenible del bosque. El algoritmo detectó en total 10 trazos.',
+        legend: [
+                {
+                  title: 'Concesiones forestales',
+                  color: '#66f7ff'
+                }
+              ],
+        sources: 'ADD SOURCE',
         location: {
             center: [-74.549, -9.575],
             zoom: 8,
