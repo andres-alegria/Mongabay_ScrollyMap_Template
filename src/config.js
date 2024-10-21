@@ -56,7 +56,7 @@ export default {
         sources: "National Police of Peru's Anti-Narcotics Unit (Dirandro), Earth Genome, OpenStreetMap, and Ucayali Regional Government.",
         location: {
             center: [-74.19873, -9.59581],
-            zoom: 4.35,
+            zoom: 5.3,
             pitch: 23.12,
             bearing: 8
         },
@@ -72,19 +72,19 @@ export default {
                layer: 'airstrips-10224-dozgmq',
                opacity: 1,
            },
-           // {
-           //     layer: 'concesiones-forestales-10-432-dulhn7 copy 2',
-           //     opacity: 0,
-           // },
-           // {
-           //     layer: 'concesiones-forestales-10-432-dulhn7 copy 1',
-           //     opacity: 0,
-           // },
-           // {
-           //     layer: 'coca-crops-density-20241002t1-55l40t',
-           //     opacity: 0,
-           //
-           // },
+           {
+               layer: 'concesiones-forestales-10-432-dulhn7 copy 2',
+               opacity: 0,
+           },
+           {
+               layer: 'concesiones-forestales-10-432-dulhn7 copy 1',
+               opacity: 0,
+           },
+           {
+               layer: 'coca-crops-density-20241002t1-55l40t',
+               opacity: 0,
+
+           },
         ],
         onChapterExit: [
              {
@@ -104,7 +104,7 @@ export default {
                 src: 'Pist069_PleiadesNeo2022-07-27.jpg',
                 position: 'top',
                 title: 'Airstrip 69',
-                author: 'SPOT'
+                author: 'SPOT IMAGE'
               }
             ],
         description: 'Journalistic verification of each aistrip involved cross referencing results from Earth Index with government data, open source information and local sources. This investigation confirms that 67 of the 76 drug runways are distributed between Ucayali (45), Huánuco (17) and Pasco (5), and today serve drug trafficking.',
@@ -139,8 +139,11 @@ export default {
           {
               layer: 'airstrips-10224-dozgmq',
               opacity: 1,
+          },
+          {
+              layer: 'territorios-indigenas-0lu5ni copy',
+              opacity: 0,
           }
-
         ],
         onChapterExit: [
           {
@@ -182,7 +185,7 @@ export default {
         onChapterExit: [
           {
               layer: 'territorios-indigenas-0lu5ni copy',
-              opacity: 0,
+              opacity: 0.75,
           }
         ]
     },
@@ -223,7 +226,7 @@ export default {
           },
           {
               layer: 'coca-crops-density-20241002t1-55l40t',
-              opacity: 1,
+              opacity: .1,
 
           }
         ],
