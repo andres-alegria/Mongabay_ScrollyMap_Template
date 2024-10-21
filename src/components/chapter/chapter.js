@@ -4,7 +4,13 @@ import './chapter.scss';
 import { useTranslation } from 'react-i18next';
 import { Waypoint } from 'react-waypoint';
 
-function Chapter({ id, theme, title, image, images, description, currentChapterId, legend, sources, setCurrentChapter, setCurrentAction }) {
+const ALIGNMENTS = {
+  left: 'w-full lg:w-1/3 m-left-chapter',
+  fully: 'w-full lg:w-1/2 mx-auto',
+  right: 'w-full lg:w-1/3 self-end m-right-chapter',
+};
+
+function Chapter({ id, theme, title, image, images, description, currentChapterId, legend, sources, alignment, setCurrentChapter, setCurrentAction }) {
   const { t } = useTranslation();
 
   const stepClasses = 'step max-w-md opacity-25';
@@ -31,7 +37,7 @@ function Chapter({ id, theme, title, image, images, description, currentChapterI
   );
 
   const renderLegend = (legend, sources) => (
-    <div className="text-sm pb-12 px-12">
+    <div className={cx("text-sm pb-12 px-12")}>
       {legend.map((l) => (
         <div key={l.title} className="flex items-center mb-4">
           <span
@@ -63,7 +69,7 @@ function Chapter({ id, theme, title, image, images, description, currentChapterI
   };
 
   return (
-    <div id={id} className={classList}>
+    <div id={id} className={cx(classList, ALIGNMENTS[alignment])}>
       <Waypoint
         onEnter={onEnter}
         onLeave={onLeave}

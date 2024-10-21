@@ -4,12 +4,6 @@ import Chapter from '../chapter/chapter';
 import { useTranslation } from 'react-i18next';
 import './story.scss';
 
-const alignments = {
-  left: 'lefty',
-  center: 'centered',
-  right: 'righty'
-};
-
 const Story = ({ title, subtitle, byline, theme, chapters, alignment, currentChapterId, footer, hasIntro, setCurrentChapter, setCurrentAction }) => {
   const { t } = useTranslation();
 
@@ -22,7 +16,7 @@ const Story = ({ title, subtitle, byline, theme, chapters, alignment, currentCha
           {byline && <p>{t(byline)}</p>}
         </div>
       )}
-      <div id="features" className={alignments[alignment]}>
+      <div id="features" className="w-[90%] mx-auto flex flex-col">
         {chapters.map((chapter) => (
           <Chapter
             key={chapter.id}

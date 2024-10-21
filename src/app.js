@@ -15,7 +15,6 @@ const App = (props) => {
     title,
     subtitle,
     byline,
-    alignment,
     footer,
     intro,
     logos
@@ -42,7 +41,6 @@ const App = (props) => {
         subtitle={subtitle}
         byline={byline}
         theme={theme}
-        alignment={alignment}
         currentChapterId={currentChapterId}
         footer={footer}
         setCurrentChapter={setCurrentChapter}
