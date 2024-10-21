@@ -43,7 +43,7 @@ export default {
         id: 'first chapter',
         alignment: 'left',
         hidden: false,
-        title: 'Airstips detected',
+        title: 'Airstrips detected',
         description: 'Using the Earth Index, an AI algorithm, Mongabay detected 76 clandestine landing strips hidden in the Peruvian Amazon.',
         legend: [
               {
@@ -202,7 +202,7 @@ export default {
                 author: 'SPOT Image'
               }
             ],
-        description: 'Illegal airstips have taken over entire landscapes in this corner of the Amazon Rainforest. In the province of Atalaya, which is part of the Ucayali region, we detected 32 airstrips.',
+        description: 'Illegal airstrips have taken over entire landscapes in this corner of the Amazon Rainforest. In the province of Atalaya, which is part of the Ucayali region, we detected 32 airstrips.',
         legend: [
                 {
                   title: 'Deforestación',
@@ -359,7 +359,7 @@ export default {
                 author: 'Santiago Romaní'
               }
             ],
-        description: 'Narco airstrips are present in nine forestry concessions, which are zoned for sustainable forest use. The Earth Index identified ten airstips within these kinds of concessions.',
+        description: 'Narco airstrips are present in nine forestry concessions, which are zoned for sustainable forest use. The Earth Index identified ten airstrips within these kinds of concessions.',
         legend: [
                 {
                   title: 'Forestry concessions',
