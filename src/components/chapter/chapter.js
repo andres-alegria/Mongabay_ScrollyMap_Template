@@ -51,7 +51,7 @@ function Chapter({
   );
 
   const renderLegend = (legend, sources) => (
-    <div className={cx('text-sm pb-12 px-12')}>
+    <div className="text-base leading-6">
       {legend.map((l) => (
         <div key={l.title} className="flex items-center gap-4 mb-4">
           {l.icon ? (
@@ -93,13 +93,13 @@ function Chapter({
         topOffset="-20%"
         bottomOffset="20%"
       />
-      <div className={cx(theme, 'rounded-lg')}>
+      <div className={cx(theme, 'rounded-lg p-6 space-y-4')}>
         {images &&
           images.filter((i) => i.position === 'top').map((i) => renderImage(i))}
         {title && (
-          <div className="content text-base py-12 px-12 leading-6">
-            {title && <h3 className="font-lora text-2xl pb-6">{t(title)}</h3>}
-            {description && <p className="text-sm leading-8">{t(description)}</p>}
+          <div className="text-base leading-6">
+            {title && <h3 className="font-lora text-2xl leading-8 pb-4">{t(title)}</h3>}
+            {description && <p className="text-base leading-6">{t(description)}</p>}
           </div>
         )}
         {legend && renderLegend(legend, sources)}
