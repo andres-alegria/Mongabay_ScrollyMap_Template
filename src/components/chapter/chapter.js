@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import cx from 'classnames';
 import './chapter.scss';
 import { useTranslation } from 'react-i18next';
@@ -85,15 +85,20 @@ function Chapter({
     setCurrentAction('leave');
   };
 
+  const chapterRef = useRef(null);
+  const chapterHeight = chapterRef.current?.offsetHeight;
+  // Add some marging to the chapter if it's too small so it works correctly with the scrolling
+  const extraHeight = chapterHeight && chapterHeight < 400 ? 'my-40' : '';
+
   return (
     <div id={id} className={cx(classList, ALIGNMENTS[alignment])}>
       <Waypoint
         onEnter={onEnter}
         onLeave={onLeave}
         topOffset="-20%"
-        bottomOffset="20%"
+        bottomOffset="40%"
       />
-      <div className={cx(theme, 'rounded-lg p-6 space-y-4')}>
+      <div ref={chapterRef} className={cx(theme, 'rounded-lg p-6 space-y-4', extraHeight)}>
         {images &&
           images.filter((i) => i.position === 'top').map((i) => renderImage(i))}
         {title && (
