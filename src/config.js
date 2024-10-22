@@ -107,7 +107,7 @@ export default {
         },
       ],
       description:
-        'Journalistic verification of each aistrip involved cross referencing results from Earth Index with government data, open source information and local sources. This investigation confirms that 67 of the 76 drug runways are distributed between Ucayali (45), Huánuco (17) and Pasco (5), and today serve drug trafficking.',
+        'Journalistic verification of each airstrip involved cross referencing results from Earth Index with government data, open source information and local sources. This investigation confirms that 67 of the 76 drug runways are distributed between Ucayali (45), Huánuco (17) and Pasco (5), and today serve drug trafficking.',
       legend: [
         {
           title: 'Coca crop density in 2023',
@@ -120,12 +120,6 @@ export default {
         zoom: 8,
         pitch: 35.12,
         bearing: 49.6,
-        // flyTo additional controls-
-        // These options control the flight curve, making it move
-        // slowly and zoom out almost completely before starting
-        // to pan.
-        //speed: 2, // make the flying slow
-        //curve: 1, // change the speed at which it zooms out
       },
       mapAnimation: 'flyTo',
       rotateAnimation: false,
@@ -153,14 +147,14 @@ export default {
     },
     {
       id: 'third-chapter',
-      alignment: 'left',
+      alignment: 'fully',
       hidden: false,
-      title: 'Deadly flights',
+      title: 'Beseiging Indigenous territories',
       description:
-        'In these three regions, at least 15 Indigenous leaders have been murdered since the pandemic began in 2020. The area is also home to the largest number of flights shipping cocaine, according to sources from the Anti-Drug Directorate of the National Police of Peru.',
+          'Crucially, 30 of the 67 narco airstrips were detected within Indigenous territories and 26 more are located near them.',
       legend: [
         {
-          title: 'Territorios Indigenas',
+          title: 'Indigenous territories',
           color: '#de6363',
           pattern: 'LINEPATTERN',
         },
@@ -179,6 +173,14 @@ export default {
         {
           layer: 'territorios-indigenas-0lu5ni copy',
           opacity: 1,
+        },
+        {
+          layer: 'concesiones-forestales-10-432-dulhn7 copy 2',
+          opacity: 0,
+        },
+        {
+          layer: 'concesiones-forestales-10-432-dulhn7 copy 1',
+          opacity: 0,
         },
       ],
       onChapterExit: [
@@ -205,7 +207,7 @@ export default {
         'Illegal airstrips have taken over entire landscapes in this corner of the Amazon Rainforest. In the province of Atalaya, which is part of the Ucayali region, we detected 32 airstrips.',
       legend: [
         {
-          title: 'Deforestación',
+          title: 'Tree Cover Loss',
           color: '#ccefb8',
         },
       ],
@@ -226,18 +228,18 @@ export default {
         },
         {
           layer: 'coca-crops-density-20241002t1-55l40t',
-          opacity: 0.1,
+          opacity: 0.5,
         },
       ],
       onChapterExit: [],
     },
     {
       id: 'fifth-chapter',
-      alignment: 'left',
+      alignment: 'fully',
       hidden: false,
-      title: 'Indigenous territories',
+      title: 'Deadly flights',
       description:
-        'Crucially, 30 of the 67 narco airstrops were detected within Indigenous territories and 26 more are located near them.',
+        'In these three regions, at least 15 Indigenous leaders have been murdered since the pandemic began in 2020. The area is also the origin of the largest number of flights to ship cocaine, according to sources from the Anti-Drug Directorate of the National Police of Peru.',
       location: {
         center: [-74.549, -9.575],
         zoom: 8,
@@ -254,7 +256,7 @@ export default {
         },
         {
           layer: 'coca-crops-density-20241002t1-55l40t',
-          opacity: 1,
+          opacity: .5,
         },
       ],
       onChapterExit: [
@@ -292,10 +294,6 @@ export default {
         {
           layer: 'deforestationthreeregions-dcthbg',
           opacity: 1,
-        },
-        {
-          layer: 'coca-crops-density-20241002t1-55l40t',
-          opacity: 0,
         },
         {
           layer: 'territorios-indigenas-0lu5ni copy',
@@ -337,6 +335,10 @@ export default {
           layer: 'territorios-indigenas-0lu5ni copy',
           opacity: 1,
         },
+        {
+          layer: 'concesiones-forestales-10-432-dulhn7 copy 2',
+          opacity: 0,
+        }
       ],
       onChapterExit: [
         {
@@ -431,7 +433,7 @@ export default {
         },
         {
           layer: 'coca-crops-density-20241002t1-55l40t',
-          opacity: 0,
+          opacity: 0.75,
         },
         {
           layer: 'concesiones-forestales-10-432-dulhn7 copy 2',
@@ -450,7 +452,7 @@ export default {
     },
     {
       id: 'tenth-identifier',
-      alignment: 'right',
+      alignment: 'fully',
       hidden: false,
       title: 'Rivers and roads',
       images: [
